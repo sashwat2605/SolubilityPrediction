@@ -13,7 +13,6 @@ from rdkit.Chem import Descriptors
 # Custom function
 ######################
 ## Calculate molecular descriptors
-
 def AromaticProportion(m):
   aromatic_atoms = [m.GetAtomWithIdx(i).GetIsAromatic() for i in range(m.GetNumAtoms())]
   aa_count = []
